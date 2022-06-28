@@ -33,11 +33,27 @@ namespace UserRegistration
             }
             else
             {
-                Console.WriteLine("Not Valid");  
+                Console.WriteLine("Not Valid");
+            }
+        }
+
+        public Regex EmailIdRegex = new Regex("^[A-Za-z0-9]+([._+-][a-zA-Z0-9]+)+@[a-zA-Z0-9]+.[a-zA-Z]{2,4}([.][a-zA-Z]{2,})$");
+        public void ValidateEmailIdRegex(string EmailId)
+        {
+            Console.WriteLine("\nLastName:" + EmailId);
+            if (LastNameRegex.IsMatch(EmailId))
+            {
+                Console.WriteLine("Valid");
+            }
+            else
+            {
+                Console.WriteLine("Invalid");
             }
         }
     }
 }
+    
+
 
 
 
