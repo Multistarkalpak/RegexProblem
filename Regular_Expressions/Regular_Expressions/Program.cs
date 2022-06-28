@@ -34,7 +34,7 @@
             //UC5
 
             RegexClass regex5 = new RegexClass();
-            regex5.ValidatePasswordRegex("chchvngfnvm");
+            regex5.ValidatePasswordRegex("chchvngfnvmK");
 
 
 
