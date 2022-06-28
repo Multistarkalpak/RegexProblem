@@ -31,6 +31,11 @@
             RegexClass regex4 = new RegexClass();
             regex4.ValidateMobileRegex("91 7898156858");
 
+            //UC5
+
+            RegexClass regex5 = new RegexClass();
+            regex5.ValidatePasswordRegex("chchvngfnvm");
+
 
 
         }
