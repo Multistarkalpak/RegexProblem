@@ -36,6 +36,11 @@
             RegexClass regex5 = new RegexClass();
             regex5.ValidatePasswordRegex("chchvngfnvmK");
 
+            //UC6
+
+            RegexClass regex6 = new RegexClass();
+            regex6.ValidatePasswordRegex("chchvngfnvmK1");
+
 
 
         }
