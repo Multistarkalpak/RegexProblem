@@ -34,12 +34,23 @@
             //UC5
 
             RegexClass regex5 = new RegexClass();
-            regex5.ValidatePasswordRegex("chchvngfnvmK");
+            regex5.ValidatePasswordRegex("chchvngfnvm");
 
             //UC6
 
             RegexClass regex6 = new RegexClass();
-            regex6.ValidatePasswordRegex("chchvngfnvmK1");
+            regex6.ValidatePasswordRegex("chchvngfnvmK");
+
+            //UC7
+
+            RegexClass regex7 = new RegexClass();
+            regex7.ValidatePasswordRegex("chchvngfnvmK1");
+
+            //UC8
+
+            RegexClass regex8 = new RegexClass();
+            regex8.ValidatePasswordRegex("chchvngfnvmK1&");
+
 
 
 
