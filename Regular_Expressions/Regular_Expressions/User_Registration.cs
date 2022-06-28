@@ -9,7 +9,7 @@ namespace UserRegistration
 {
     public class RegexClass
     {
-        public Regex FirstNameRegex = new Regex("^[A-Z]{1}[A-Za-z]{3,}?$");
+        public Regex FirstNameRegex = new Regex("^[A-Z]{1}[A-Za-z]{3,}$");
         public void ValidateFirstNameRegex(string FirstName)
         {
             Console.WriteLine("\nFirstName:" + FirstName);
@@ -20,6 +20,20 @@ namespace UserRegistration
             else
             {
                 Console.WriteLine("not valid");
+            }
+        }
+
+        public Regex LastNameRegex = new Regex("^[A-Z]{1}[A-Za-z]{3,}$");
+        public void ValidatelastNameRegex(string LastName)
+        {
+            Console.WriteLine("\nLastName:" + LastName);
+            if (LastNameRegex.IsMatch(LastName))
+            {
+                Console.WriteLine("Valid");
+            }
+            else
+            {
+                Console.WriteLine("Not Valid");  
             }
         }
     }
