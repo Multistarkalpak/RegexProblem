@@ -9,7 +9,7 @@ namespace UserRegistration
 {
     public class RegexClass
     {
-        public Regex FirstNameRegex = new Regex("^[A-Z]{1}[A-Za-z]{3,}$");
+        public Regex FirstNameRegex = new Regex(@"^[A-Z]{1}[A-Za-z]{3,}$");
         public void ValidateFirstNameRegex(string FirstName)
         {
             Console.WriteLine("\nFirstName:" + FirstName);
@@ -23,7 +23,7 @@ namespace UserRegistration
             }
         }
 
-        public Regex LastNameRegex = new Regex("^[A-Z]{1}[A-Za-z]{3,}$");
+        public Regex LastNameRegex = new Regex(@"^[A-Z]{1}[A-Za-z]{3,}$");
         public void ValidatelastNameRegex(string LastName)
         {
             Console.WriteLine("\nLastName:" + LastName);
@@ -37,11 +37,25 @@ namespace UserRegistration
             }
         }
 
-        public Regex EmailIdRegex = new Regex("^[A-Za-z0-9]+([._+-][a-zA-Z0-9]+)+@[a-zA-Z0-9]+.[a-zA-Z]{2,4}([.][a-zA-Z]{2,})$");
+        public Regex EmailIdRegex = new Regex(@"^[a-zA-Z0-9]+([._+-][a-zA-Z0-9]+)*@[a-zA-Z0-9]+.[a-zA-Z]{2,4}([.][a-zA-Z]{2,})?$");
         public void ValidateEmailIdRegex(string EmailId)
         {
-            Console.WriteLine("\nLastName:" + EmailId);
-            if (LastNameRegex.IsMatch(EmailId))
+            Console.WriteLine("\nEmailId:" + EmailId);
+            if (EmailIdRegex.IsMatch(EmailId))
+            {
+                Console.WriteLine("Valid");
+            }
+            else
+            {
+                Console.WriteLine("Invalid");
+            }
+        }
+
+        public Regex MobileNoRegex = new Regex(@"^[0-9]{2,3}\s[1-9][0-9]{9}$");
+        public void ValidateMobileRegex(string MobileNo)
+        {
+            Console.WriteLine("\nMobileNo.:" + MobileNo);
+            if (MobileNoRegex.IsMatch(MobileNo))
             {
                 Console.WriteLine("Valid");
             }

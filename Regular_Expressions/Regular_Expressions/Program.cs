@@ -20,11 +20,16 @@
                                      "abc1232.com"
                                      ,".abc@abc.com","abc123.com.my", "abc123@.com.com"};
 
-            regex.ValidateEmailIdRegex("Kalpakc28@gmail.com");
+            regex.ValidateEmailIdRegex("kalpakc28@gmail.com");
             foreach (string SampleEmailAddress in EmailList)
             {
                 regex.ValidateEmailIdRegex(SampleEmailAddress);
             }
+
+            //UC4
+            
+            RegexClass regex4 = new RegexClass();
+            regex4.ValidateMobileRegex("91 7898156858");
 
 
 
